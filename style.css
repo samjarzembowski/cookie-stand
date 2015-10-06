@@ -24,3 +24,7 @@ mark {
 li {
   line-height: 1.4em;
 }
+
+table {
+  background-color: lightsalmon;
+}
