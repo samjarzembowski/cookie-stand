@@ -37,7 +37,7 @@ function makeUL() {
 
  //create list item
  var item = document.createElement('li');
-
+ item.className = "data";
  //Set contents
  item.appendChild(document.createTextNode(hours[i] + pikePlace.cookiesSold[i]+ ' cookies'));
 
@@ -84,7 +84,7 @@ function makeULSea() {
 
  //create list item
  var item = document.createElement('li');
-
+ item.className = "data";
  //Set contents
  item.appendChild(document.createTextNode(hours[i] + seaTac.cookiesSold[i]+ ' cookies'));
 
@@ -131,7 +131,7 @@ function makeULSouth() {
 
  //create list item
  var item = document.createElement('li');
-
+ item.className = "data";
  //Set contents
  item.appendChild(document.createTextNode(hours[i] + southCenter.cookiesSold[i]+ ' cookies'));
 
@@ -178,7 +178,7 @@ function makeULBellevue() {
 
  //create list item
  var item = document.createElement('li');
-
+ item.className = "data";
  //Set contents
  item.appendChild(document.createTextNode(hours[i] + bellevueSquare.cookiesSold[i]+ ' cookies'));
 
@@ -225,7 +225,7 @@ function makeULAlki() {
 
  //create list item
  var item = document.createElement('li');
-
+ item.className = "data";
  //Set contents
  item.appendChild(document.createTextNode(hours[i] + alki.cookiesSold[i] + ' cookies'));
 
