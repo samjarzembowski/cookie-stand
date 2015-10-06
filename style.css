@@ -3,21 +3,26 @@ body {
 }
 
 p {
+  font-size: 18px;
   font-family: Arial;
   color: blue;
 }
 
 mark {
+  background-color: salmon;
+  font-size: 18px;
   font-family: 'PT Serif', serif;
   color: black;
 }
 
 .data {
+  font-size: 18px;
   font-family: Georgia;
   color: darkblue;
 }
 
 .loc {
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -26,5 +31,6 @@ li {
 }
 
 table {
+  font-size: 18px;
   background-color: lightsalmon;
 }
