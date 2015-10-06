@@ -29,19 +29,11 @@ for (var i = 0; i < pikePlace.cookiesSold.length; i++) {
 pikePlace.cookiesSold.push(pikePlace.dailySold);
 
 function makeUL() {
-
  for (var i = 0; i < pikePlace.cookiesSold.length; i++) {
-
- //connect list to JS
  var awesomeList = document.getElementById('pike');
-
- //create list item
  var item = document.createElement('li');
  item.className = "data";
- //Set contents
  item.appendChild(document.createTextNode(hours[i] + pikePlace.cookiesSold[i]+ ' cookies'));
-
- //Add it to the list
  awesomeList.appendChild(item);
   }
 }
@@ -76,19 +68,11 @@ for (var i = 0; i < seaTac.cookiesSold.length; i++) {
 seaTac.cookiesSold.push(seaTac.dailySold);
 
 function makeULSea() {
-
  for (var i = 0; i < seaTac.cookiesSold.length; i++) {
-
- //connect list to JS
  var awesomeList = document.getElementById('seaTac');
-
- //create list item
  var item = document.createElement('li');
  item.className = "data";
- //Set contents
  item.appendChild(document.createTextNode(hours[i] + seaTac.cookiesSold[i]+ ' cookies'));
-
- //Add it to the list
  awesomeList.appendChild(item);
   }
 }
@@ -123,19 +107,11 @@ for (var i = 0; i < southCenter.cookiesSold.length; i++) {
 southCenter.cookiesSold.push(southCenter.dailySold);
 
 function makeULSouth() {
-
  for (var i = 0; i < southCenter.cookiesSold.length; i++) {
-
- //connect list to JS
  var awesomeList = document.getElementById('southCenter');
-
- //create list item
  var item = document.createElement('li');
  item.className = "data";
- //Set contents
  item.appendChild(document.createTextNode(hours[i] + southCenter.cookiesSold[i]+ ' cookies'));
-
- //Add it to the list
  awesomeList.appendChild(item);
   }
 }
@@ -170,19 +146,11 @@ for (var i = 0; i < bellevueSquare.cookiesSold.length; i++) {
 bellevueSquare.cookiesSold.push(bellevueSquare.dailySold);
 
 function makeULBellevue() {
-
  for (var i = 0; i < bellevueSquare.cookiesSold.length; i++) {
-
- //connect list to JS
  var awesomeList = document.getElementById('bellevueSquare');
-
- //create list item
  var item = document.createElement('li');
  item.className = "data";
- //Set contents
  item.appendChild(document.createTextNode(hours[i] + bellevueSquare.cookiesSold[i]+ ' cookies'));
-
- //Add it to the list
  awesomeList.appendChild(item);
   }
 }
@@ -217,19 +185,11 @@ for (var i = 0; i < alki.cookiesSold.length; i++) {
 alki.cookiesSold.push(alki.dailySold);
 
 function makeULAlki() {
-
  for (var i = 0; i < alki.cookiesSold.length; i++) {
-
- //connect list to JS
  var awesomeList = document.getElementById('alki');
-
- //create list item
  var item = document.createElement('li');
  item.className = "data";
- //Set contents
  item.appendChild(document.createTextNode(hours[i] + alki.cookiesSold[i] + ' cookies'));
-
- //Add it to the list
  awesomeList.appendChild(item);
   }
 }
