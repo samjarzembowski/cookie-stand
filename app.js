@@ -1,3 +1,5 @@
+var hours = ['10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', 'Total: '];
+
 var pikePlace = {
 	location: 'Pike Place Market',
 	minCustHour: 17,
@@ -15,7 +17,6 @@ var pikePlace = {
 	cookiesSold: [],
   dailySold: 0,
 }
-
 
 for (var i = 0; i < 8; i++) {
 	pikePlace.cookiesSold[i] = pikePlace.totalCookiesHour();
@@ -38,7 +39,7 @@ function makeUL() {
  var item = document.createElement('li');
 
  //Set contents
- item.appendChild(document.createTextNode(pikePlace.cookiesSold[i]+ ' cookies'));
+ item.appendChild(document.createTextNode(hours[i] + pikePlace.cookiesSold[i]+ ' cookies'));
 
  //Add it to the list
  awesomeList.appendChild(item);
@@ -46,9 +47,7 @@ function makeUL() {
 }
 
 
-//FINISHED WITH PIKE PLACE MARKET
-
-
+//BEGIN SEATAC AIRPORT
 var seaTac = {
 	location: 'SeaTac Airport',
 	minCustHour: 6,
@@ -65,7 +64,6 @@ var seaTac = {
   cookiesSold: [],
   dailySold: 0,
 }
-
 
 for (var i = 0; i < 8; i++) {
   seaTac.cookiesSold[i] = seaTac.totalCookiesHour();
@@ -88,7 +86,7 @@ function makeULSea() {
  var item = document.createElement('li');
 
  //Set contents
- item.appendChild(document.createTextNode(seaTac.cookiesSold[i]+ ' cookies'));
+ item.appendChild(document.createTextNode(hours[i] + seaTac.cookiesSold[i]+ ' cookies'));
 
  //Add it to the list
  awesomeList.appendChild(item);
@@ -96,7 +94,7 @@ function makeULSea() {
 }
 
 
-
+//BEGIN SOUTHCENTER MALL
 var southCenter = {
 	location: 'South Center Mall',
 	minCustHour: 11,
@@ -135,7 +133,7 @@ function makeULSouth() {
  var item = document.createElement('li');
 
  //Set contents
- item.appendChild(document.createTextNode(southCenter.cookiesSold[i]+ ' cookies'));
+ item.appendChild(document.createTextNode(hours[i] + southCenter.cookiesSold[i]+ ' cookies'));
 
  //Add it to the list
  awesomeList.appendChild(item);
@@ -143,8 +141,7 @@ function makeULSouth() {
 }
 
 
-
-
+//BEGIN BELLEVUE SQUARE
 var bellevueSquare = {
 	location: 'Bellevue Square',
 	minCustHour: 20,
@@ -161,7 +158,6 @@ var bellevueSquare = {
   cookiesSold: [],
   dailySold: 0,
 }
-
 
 for (var i = 0; i < 8; i++) {
   bellevueSquare.cookiesSold[i] = bellevueSquare.totalCookiesHour();
@@ -184,7 +180,7 @@ function makeULBellevue() {
  var item = document.createElement('li');
 
  //Set contents
- item.appendChild(document.createTextNode(bellevueSquare.cookiesSold[i]+ ' cookies'));
+ item.appendChild(document.createTextNode(hours[i] + bellevueSquare.cookiesSold[i]+ ' cookies'));
 
  //Add it to the list
  awesomeList.appendChild(item);
@@ -192,7 +188,7 @@ function makeULBellevue() {
 }
 
 
-
+//BEGIN ALKI
 var alki = {
 	location: 'Alki',
 	minCustHour: 3,
@@ -231,7 +227,7 @@ function makeULAlki() {
  var item = document.createElement('li');
 
  //Set contents
- item.appendChild(document.createTextNode(alki.cookiesSold[i] + ' cookies'));
+ item.appendChild(document.createTextNode(hours[i] + alki.cookiesSold[i] + ' cookies'));
 
  //Add it to the list
  awesomeList.appendChild(item);
