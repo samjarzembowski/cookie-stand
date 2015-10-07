@@ -19,6 +19,27 @@ mark {
   color: black;
 }
 
+li {
+  line-height: 1.4em;
+}
+
+table {
+  font-size: 18px;
+  background-color: lightsalmon;
+}
+
+td {
+  text-align: center;
+  color: blue;
+}
+
+.history {
+  margin-left: 300px;
+  padding: 10px;
+  background-color: lightsalmon;
+  width: 60%;
+}
+
 .data {
   font-size: 18px;
   font-family: Georgia;
@@ -30,18 +51,6 @@ mark {
   font-weight: bold;
 }
 
-li {
-  line-height: 1.4em;
-}
-
-table {
-  font-size: 18px;
-  background-color: lightsalmon;
-}
-
-.history {
-  margin-left: 100px;
-  padding: 10px;
-  background-color: lightsalmon;
-  width: 60%;
+.imagesTable {
+  margin-left: 300px;
 }
