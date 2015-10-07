@@ -48,3 +48,4 @@ var seaTac = new CookieStand('SeaTac Airport', 6, 44, 1.2, "seaTac");
 var southCenter = new CookieStand('Southcenter Mall', 11, 38, 1.9, "southCenter");
 var bellevueSquare = new CookieStand('Bellevue Square', 20, 48, 3.3, "bellevueSquare");
 var alki = new CookieStand('Alki', 3, 24, 2.6, "alki");
+
