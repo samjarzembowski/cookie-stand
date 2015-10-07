@@ -2,6 +2,10 @@ body {
   background-color: lightgray;
 }
 
+header {
+  background-color: gray;
+}
+
 p {
   font-size: 18px;
   font-family: Arial;
@@ -15,6 +19,27 @@ mark {
   color: black;
 }
 
+li {
+  line-height: 1.4em;
+}
+
+table {
+  font-size: 18px;
+  background-color: lightsalmon;
+}
+
+td {
+  text-align: center;
+  color: blue;
+}
+
+.history {
+  margin-left: 300px;
+  padding: 10px;
+  background-color: lightsalmon;
+  width: 60%;
+}
+
 .data {
   font-size: 18px;
   font-family: Georgia;
@@ -26,11 +51,10 @@ mark {
   font-weight: bold;
 }
 
-li {
-  line-height: 1.4em;
+.imagesTable {
+  margin-left: 300px;
 }
 
-table {
-  font-size: 18px;
-  background-color: lightsalmon;
+.tloc {
+  text-align: left;
 }
