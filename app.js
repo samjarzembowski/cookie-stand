@@ -48,3 +48,18 @@ var southCenter = new CookieStand('Southcenter Mall', 11, 38, 1.9, "southCenter"
 var bellevueSquare = new CookieStand('Bellevue Square', 20, 48, 3.3, "bellevueSquare");
 var alki = new CookieStand('Alki', 3, 24, 2.6, "alki");
 
+
+var log = function (event) {
+  event.preventDefault();
+  var location = document.getElementById('location').value;
+  var minCustHour = document.getElementById('minCustHour').value;
+  var maxCustHour = document.getElementById('maxCustHour').value;
+  var avgCookCust = document.getElementById('avgCookCust').value;
+  console.log(location, minCustHour, maxCustHour, avgCookCust);
+}
+
+var submit = document.getElementById('submit');
+submit.addEventListener('click', log, false);
+
+
+
