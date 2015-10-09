@@ -1,3 +1,6 @@
+//recode constructor to remove param 'loc'
+//change instances of this.locHTML to location; change HTML table <tr id's = Pike Place Market &c.
+
 var CookieStand = function(location, minCustHour, maxCustHour, avgCookiesCust, loc) {
 	this.location = location;
 	this.minCustHour = minCustHour;
@@ -67,7 +70,7 @@ var log = function (event) {
   var maxCustHour = document.getElementById('maxCustHour').value;
   var avgCookCust = document.getElementById('avgCookCust').value;
   console.log(location, minCustHour, maxCustHour, avgCookCust);
-  var
+  var input = [this.location, this.minCustHour, this.maxCustHour, this.avgCookCust];
 }
 
 var submit = document.getElementById('submit');
