@@ -28,9 +28,16 @@ table {
   background-color: lightsalmon;
 }
 
+th {
+  border: 1px solid black;
+  padding: 10px;
+}
+
 td {
   text-align: center;
   color: blue;
+  border: 1px dotted black;
+  padding: 2px;
 }
 
 .history {
@@ -55,6 +62,6 @@ td {
   margin-left: 300px;
 }
 
-table#data {
+tbody#data {
   text-align: left;
 }
