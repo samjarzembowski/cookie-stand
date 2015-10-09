@@ -11,19 +11,9 @@
 <body>
 	<h1>Pat's Cookie Stand Sales Data</h1><br />
 
-  <table>
-    <tr>
-      <th></th>
-      <th>10am</th>
-      <th>11am</th>
-      <th>12pm</th>
-      <th>1pm</th>
-      <th>2pm</th>
-      <th>3pm</th>
-      <th>4pm</th>
-      <th>5pm</th>
-      <th>Total</th>
-    </tr>
+  <table id="data">
+    <tr id="theader"></tr>
+
     <tr class="tloc" id="pike">
       <th>Pike Place</th>
     </tr>
@@ -40,21 +30,25 @@
       <th>Alki</th>
     </tr>
   </table>
+
+
   <form>
     Location name: <br>
-    <input type="text" name="locationName">
+    <input type="text" name="location" id="location">
     <br>
     Minimum customers per hour: <br>
-    <input type="text" name="minCustHour">
+    <input type="text" id="minCustHour">
     <br>
     Maximum customers per hour: <br>
-    <input type="text" name="maxCustHour">
+    <input type="text" id="maxCustHour">
     <br>
     Average cookies sold per customers: <br>
-    <input type="text" name="avgCookCust">
+    <input type="text" id="avgCookCust">
     <br><br>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" id="submit">
   </form>
-	<script src="app.js"></script>
+
+
+  <script src="app.js"></script>
 </body>
 </html>
