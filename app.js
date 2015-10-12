@@ -78,10 +78,19 @@ var log = function (event) {
   var avgCookCust = document.getElementById('avgCookCust').value;
   console.log(location, minCustHour, maxCustHour, avgCookCust);
   var newLocation = new CookieStand(location, minCustHour, maxCustHour, avgCookCust);
-}
+
+//keep working here to get pre-existing rows to update...possibly change var names at 66-70?
+//   if (document.getElementById('location')) {
+//       var aweTable = document.getElementById(this.location);
+//       var item = document.createElement('td');
+//       item.appendChild(document.createTextNode(this.cookiesSold[i]));
+//       aweTable.appendChild(item);
+//   } else {
+//   };
+// }
 
 var submit = document.getElementById('submit');
 submit.addEventListener('click', log, false);
-
+}
 
 
