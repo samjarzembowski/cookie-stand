@@ -1,6 +1,3 @@
-//recode constructor to remove param 'loc'
-//change instances of this.locHTML to location; change HTML table <tr id's = Pike Place Market &c.
-
 var CookieStand = function(location, minCustHour, maxCustHour, avgCookiesCust, loc) {
 	this.location = location;
 	this.minCustHour = minCustHour;
@@ -8,7 +5,7 @@ var CookieStand = function(location, minCustHour, maxCustHour, avgCookiesCust, l
 	this.avgCookiesCust = avgCookiesCust;
   this.cookiesSold = [];
   this.dailySold = 0;
-  this.locHTML = loc;
+  //this.locHTML = loc;
 
 	this.randCustHour = function() {
 		return Math.floor(Math.random() * (this.maxCustHour - this.minCustHour + 1) + this.minCustHour);
@@ -31,9 +28,20 @@ var CookieStand = function(location, minCustHour, maxCustHour, avgCookiesCust, l
     //console.log(this.cookiesSold);
   };
 
-  this.makeTable = function(locHTML) {
+  this.makeTable = function() {
+    //create a table row & assign id
+    var rowLocation = document.getElementById('data');
+    var newRow = document.createElement('tr');
+    newRow.id = this.location;
+    rowLocation.appendChild(newRow);
+    //create th in above tr and fill it with store location
+    var locCell = document.getElementById(this.location);
+    var loc = document.createElement('th');
+    loc.appendChild(document.createTextNode(this.location));
+    locCell.appendChild(loc);
+    //filll above tr with sales data in td's
     for (var i = 0; i < this.cookiesSold.length; i++){
-      var aweTable = document.getElementById(this.locHTML);
+      var aweTable = document.getElementById(this.location);
       var item = document.createElement('td');
       item.appendChild(document.createTextNode(this.cookiesSold[i]));
       aweTable.appendChild(item);
@@ -41,7 +49,7 @@ var CookieStand = function(location, minCustHour, maxCustHour, avgCookiesCust, l
   };
 
   this.calcCookiesSold();
-  this.makeTable(this.locHTML);
+  this.makeTable();
 }
 
 var thead = function() {
@@ -70,7 +78,7 @@ var log = function (event) {
   var maxCustHour = document.getElementById('maxCustHour').value;
   var avgCookCust = document.getElementById('avgCookCust').value;
   console.log(location, minCustHour, maxCustHour, avgCookCust);
-  var input = [this.location, this.minCustHour, this.maxCustHour, this.avgCookCust];
+  var addLoc = new CookieStand(location, minCustHour, maxCustHour, avgCookCust);
 }
 
 var submit = document.getElementById('submit');
